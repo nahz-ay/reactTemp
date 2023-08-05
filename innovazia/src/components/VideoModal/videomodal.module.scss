@@ -1,0 +1,30 @@
+/* VideoModal.module.scss */
+
+$primary-color: #007bff;
+
+.modal {
+  /* Your modal styles here */
+
+  /* Animation */
+  background-color: $primary-color;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal.overlay-entered {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.overlay {
+  /* Your overlay styles here */
+
+  /* Animation */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.overlay-entered {
+  opacity: 1;
+}

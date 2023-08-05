@@ -1,0 +1,26 @@
+// Accordion.scss
+.faq-accordion {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.faq-item {
+  border-top: 1px solid #ddd;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  font-size: 16px;
+}
+
+.faq-answer {
+  padding: 10px;
+}
