@@ -1,4 +1,5 @@
-// Accordion.scss
+/* Accordion.scss */
+
 .faq-accordion {
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -10,15 +11,28 @@
   border-top: 1px solid #ddd;
   cursor: pointer;
   padding: 10px;
+  overflow: hidden; /* Hide content overflow when collapsed */
+  transition: max-height 0.3s ease-in-out; /* Add a smooth transition */
+  max-height: 50px; /* Initial collapsed height */
+}
+
+.faq-item.open {
+  max-height: 200px; /* Expanded height */
 }
 
 .faq-question {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .arrow {
   font-size: 16px;
+  transition: transform 0.3s ease-in-out; /* Add arrow rotation transition */
+}
+
+.faq-item.open .arrow {
+  transform: rotate(180deg);
 }
 
 .faq-answer {

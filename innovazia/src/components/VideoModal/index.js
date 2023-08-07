@@ -1,28 +1,40 @@
-"use client"
+import React, { useState } from 'react';
+import { Button, Modal } from 'react-bootstrap';
 
-import React from 'react';
-import Modal from 'react-modal';
-import styles from './videomodal.module.scss'; // Import the CSS module
+const VideoModal = () => {
+  const [show, setShow] = useState(false);
 
-const VideoModal = ({ isOpen, onClose, videoUrl,children }) => {
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
-    <Modal
-      isOpen={isOpen}
-      onRequestClose={onClose}
-      contentLabel="Video Modal"
-      className={`${styles.modal} ${isOpen ? styles.open : styles.closed}`}
-      overlayClassName={styles.overlay} 
-    >
-      <button onClick={onClose}>Close</button>
-      <div>
-        <video controls autoPlay>
-          <source src={videoUrl} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </Modal>
+    <div>
+      <Button variant="primary" onClick={handleShow}>
+        Open Video Modal
+      </Button>
+
+      <Modal
+        show={show}
+        onHide={handleClose}
+        dialogClassName="modal-center"
+        centered
+      >
+        {/* <Modal.Header closeButton>
+        </Modal.Header> */}
+        <Modal.Body>
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/0SyF0Py-NdI"
+            
+            title="Embedded Video"
+            allowFullScreen
+          ></iframe>
+        </Modal.Body>
+      
+      </Modal>
+    </div>
   );
 };
 
 export default VideoModal;
-

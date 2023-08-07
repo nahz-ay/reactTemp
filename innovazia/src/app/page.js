@@ -3,19 +3,10 @@ import Image from 'next/image'
 import { useState } from 'react';
 import styles from './page.module.css'
 import Accordion from '../components/AccordionFaq';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import VideoModal from '@/components/VideoModal';
 
 export default function Home() {
-
-  const [modalOpen, setModalOpen] = useState(false);
-
-  const handleOpenModal = () => {
-    setModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setModalOpen(false);
-  };
 
 
 
@@ -40,10 +31,8 @@ export default function Home() {
     <main className={styles.main}>
       <h1> 21323 </h1>
       <Accordion faqItems={faqItems} />
-      <button onClick={handleOpenModal}>Open Video Modal</button>
-
-      <VideoModal isOpen={modalOpen} onClose={handleCloseModal} videoUrl="https://youtu.be/XxWiKsWX9U8" />
-
+    
+<VideoModal/>
 
 
           
