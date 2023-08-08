@@ -1,0 +1,11 @@
+.btn{
+    width: 150px;
+    border: 0;
+    height: 150px;
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='black' stroke-width='14' stroke-dasharray='2%2c 8' stroke-dashoffset='67' stroke-linecap='butt'/%3e%3c/svg%3e");
+    border-radius: 100%;
+    &:hover{
+        background-color: $themeColor;
+    }
+}

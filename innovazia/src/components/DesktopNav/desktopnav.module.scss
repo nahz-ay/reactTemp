@@ -1,0 +1,93 @@
+.mainDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    position: static;
+    top: 0;
+    // border: 1px solid;
+    // margin: 0 2.3rem;
+    
+
+    ul {
+        list-style: none;
+        margin: 0;
+
+        li {
+            
+            .logoDiv {
+                position: relative;
+
+                img {
+                    width: 12.3125rem;
+                    height: 3.125rem;
+                }
+            }
+        }
+    }
+
+    .menu {
+        display: flex;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            li {
+                margin: 0 2.6rem;
+
+                a {
+                    color: $textColor;
+                    font-family: $font;
+                    text-decoration: none;
+                    font-size: 0.8125em;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .btnDiv {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            button {
+                margin: 0 2.6rem;
+
+                background-color: $themeColor;
+                width: 8.1875rem;
+                height: 2.4375rem;
+                border-radius: 3.125rem;
+                font-family: $font;
+                font-weight: 400;
+                font-size: 0.875em;
+                border: 0;
+                color: $white;
+                text-transform: uppercase;
+            }
+    
+            .asideNav {
+                display: flex;
+                flex-direction: column;
+                gap: .251rem;
+                align-items: end;
+        
+                span {
+                    background: $themeColor;
+                    width: 1.5rem;
+                    height: 0.125rem;
+                    &:last-child{
+                        width: 10px;
+                        height: 0.125rem;
+                    }
+                }
+            }
+        }
+    }
+
+   
+
+    
+}
