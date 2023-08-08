@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import VideoModal from "@/components/VideoModal";
 import DottedBtn from "@/components/DottedBtn";
 import DesktopNav from "@/components/DesktopNav";
+import Homebanner from "@/components/HomeBanner";
 
 export default function Home() {
   const faqItems = [
@@ -30,6 +31,7 @@ export default function Home() {
   return (
     <div className="m-lg-2">
       <DesktopNav />
+      <Homebanner/>
        <Accordion faqItems={faqItems} />
       <DottedBtn btnName="Hover" />
       <VideoModal />

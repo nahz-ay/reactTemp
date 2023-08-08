@@ -4,10 +4,9 @@
     width: 100%;
     align-items: center;
     align-content: center;
-    position: static;
-    top: 0;
-    // border: 1px solid;
-    // margin: 0 2.3rem;
+    position: fixed;
+    z-index: 9;
+ 
     
 
     ul {

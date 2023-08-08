@@ -1,0 +1,70 @@
+.mainDiv {
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    justify-content: space-between;
+
+
+    .contentDiv {
+        width: 50%;
+
+    }
+
+    .bannerImageDiv {
+        width: 50%;
+        position: relative;
+
+        .bgBanner {
+            position: absolute;
+            top: -49px;
+            right: -64px;
+            overflow: hidden;
+            width: 100%;
+            background-color: $lightBlue;
+            border-radius: 0rem 0rem 0rem 12.5rem;
+            height: 44.6875rem;
+        }
+
+        .imageDiv {
+            position: absolute;
+            border-radius: 0.375rem;
+            left: 0;
+            top: 9.4rem;
+
+            .imgOne {
+                border-radius: 0.375rem;
+                background: #FFF;
+                box-shadow: 0px 0px 30px 0px rgba(73, 101, 99, 0.22);
+                width: 15.3125rem;
+                height: 18.75rem;
+                text-align: center;
+                margin: auto;
+                padding-top: 1rem;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: -32px;
+                    left: -32px;
+                    z-index: 99;
+                    width: 3.875rem;
+                    height: 4rem;
+                    flex-shrink: 0;
+                    border-radius: 0.25rem;
+                    background: #1A5854;
+                    background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32 31" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M22 24V14C22 9.58172 18.4183 6 14 6C9.58172 6 6 9.58172 6 14V31H0V14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14V24H22Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M18 24L25 31L32.0001 24H18Z" fill="white"/></svg>');
+                    background-size: contain;
+                    padding: 20px; 
+                }
+
+                img {
+                    width: 13.6875rem;
+                    height: 13.875rem;
+                    border-radius: 10px;
+                    object-fit: contain;
+                }
+            }
+
+        }
+    }
+}
